@@ -26,10 +26,12 @@ An Open-Source, High-Performance Analytical Database
 
 ## DML and DDL
 ```sql
-select count(*) from  nest.raw_event;
+select count(*) from  dbname.employee;
 show tables;
-SHOW FULL COLUMNS FROM raw_event;
-show create table channels_message_interaction;
+SHOW FULL COLUMNS FROM employee;
+show create table employee;
+SHOW TABLE STATUS like 'employee'; # returns the row count,  avg column size etc.
+
 ```
 * DDL - [CREATE TABLE @ CREATE TABLE ](https://docs.starrocks.io/en-us/2.3/sql-reference/sql-statements/data-definition/CREATE%20TABLE)
 * DML - [ SELECT @ SELECT ](https://docs.starrocks.io/en-us/2.3/sql-reference/sql-statements/data-manipulation/SELECT)
